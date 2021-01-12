@@ -10,7 +10,9 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Does this work");
+            Console.WriteLine("********** C O D I N G   C H A L L E N G E S *********\n");
+
+            //MONDAY
             long theSum = 0;
             int whileLoopInt = 1;
 
@@ -24,8 +26,16 @@ namespace CodingChallenges
                 whileLoopInt++;
             }
 
-            Console.WriteLine(theSum);
+            Console.WriteLine("The answer to Monday's problem is: " + theSum);
             //I got 233168
+
+            Console.WriteLine("");
+
+            //TUESDAY
+
+            //WEDNESDAY
+
+            //THURSDAY
         }
     }
 }
