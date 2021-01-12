@@ -10,6 +10,7 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Does this work");
         }
     }
 }
