@@ -28,8 +28,8 @@ namespace CodingChallenges
 
             Console.WriteLine("The answer to Monday's problem is: " + theSum);
             //I got 233168
-
             Console.WriteLine("");
+
 
             //TUESDAY
             long tuesdaySum = 2;
@@ -52,8 +52,26 @@ namespace CodingChallenges
             Console.WriteLine("The answer to Tuesday's problem is " + tuesdaySum);
             //I got 4613732
             Console.WriteLine("");
-            //WEDNESDAY
 
+
+            //WEDNESDAY
+            long z = 0;
+            long xy = 1;
+            long incriminter = 1;
+            long numberToLookAt = 0;
+
+            while (numberToLookAt < 1000000000)
+            {
+                long nextNumber = z + xy;
+                z = xy;
+                xy = nextNumber;
+                numberToLookAt = nextNumber;
+                incriminter++;
+
+            }
+            Console.WriteLine("The answer to Wednesday's problem is " + incriminter);
+            //I got 45
+            Console.WriteLine("");
             //THURSDAY
         }
     }
