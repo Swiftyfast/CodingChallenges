@@ -73,6 +73,38 @@ namespace CodingChallenges
             //I got 45
             Console.WriteLine("");
             //THURSDAY
+            int thursLoop = 1;
+            
+            int longestChain = 0;
+            while (thursLoop < 1000)
+            {
+                int subLoop = thursLoop;
+                int interChain = 0;
+
+                while (subLoop != 1)
+                {
+                    if (subLoop % 2 == 0)
+                    {
+                        subLoop = subLoop / 2;
+                        interChain++;
+                    }
+                    else if (subLoop % 2 == 1)
+                    {
+                        subLoop = (3 * subLoop) + 1;
+                        interChain++;
+                    }
+                }
+
+                if (interChain + 1 > longestChain)
+                {
+                    longestChain = interChain + 1;
+                }
+                thursLoop++;
+            }
+
+
+            Console.WriteLine("The answer for Thursday is " + longestChain);
+
         }
     }
 }
